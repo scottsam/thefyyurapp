@@ -1,0 +1,234 @@
+
+2022-06-08 00:31:48,799 INFO: errors [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py:968]
+2022-06-08 00:31:51,736 ERROR: Exception on /venues [GET] [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 846, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\properties.py", line 420, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 848, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py", line 120, in venues
+    .filter(Show.start_time.strftime("%Y-%m-%d %H:%S:%M") >= cur_time)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Show.start_time has an attribute 'strftime'
+2022-06-08 00:33:16,752 ERROR: Exception on /venues [GET] [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 846, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\properties.py", line 420, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 848, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py", line 120, in venues
+    .filter(Show.start_time >= cur_time)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Show.start_time has an attribute 'strftime'
+2022-06-08 00:33:18,166 ERROR: Exception on /venues [GET] [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 846, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\properties.py", line 420, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 848, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py", line 120, in venues
+    .filter(Show.start_time >= cur_time)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Show.start_time has an attribute 'strftime'
+2022-06-08 00:34:43,326 ERROR: Exception on /venues [GET] [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 846, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\properties.py", line 420, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 848, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py", line 120, in venues
+    .filter(Show.start_time >= cur_time)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Show.start_time has an attribute 'strftime'
+2022-06-08 00:36:13,233 ERROR: Exception on /venues [GET] [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 846, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\properties.py", line 420, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 848, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py", line 120, in venues
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Show.start_time has an attribute 'strftime'
+2022-06-08 00:36:17,813 ERROR: Exception on /venues [GET] [in C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 846, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\properties.py", line 420, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 848, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\app.py", line 120, in venues
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "C:\Users\SAMUEL\Desktop\UdacityProjects\theFyyurApp\venv\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Show.start_time has an attribute 'strftime'
